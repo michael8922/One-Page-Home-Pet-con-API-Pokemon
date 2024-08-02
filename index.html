@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Inicio - Cute Pet</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/my_css.css" rel="stylesheet"/>
+        <link href="css/hover.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!----  pokedex  -->
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body id="page-top" onload="startTime()">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/logo/Logo_v1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#page-top">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#quienes_somos">Quienes somos</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#donar">Donar</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#adopcion">Adopcion</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="#contacto">Contacto</a></li>
+                </div>
+                <div class="clockdate">
+                  <span id="time"></span>
+                  <span id="date"></span>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active">
+                  <img src="assets/slider/slider_1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">BIENVENIDO</h2>
+                    <p class="lead text-slider">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                      printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Second Slide</h2>
+                    <p class="lead">This is a description for the second slide.</p>
+                  </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Third Slide</h2>
+                    <p class="lead">This is a description for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+          </header>
+
+        <section id="quienes_somos">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>Bienvenido a Home Pet</h2>
+                        <p class="lead">Somos una fundacion dedicada al cuidado de perros y gatos callejeros, nuestra mision es ayudar a nuestros amiguitos de 4 patitas, también 
+                            vendemos todo tipo de productos para tus mascotas, Si eres un DOG-Lover o un CAT-Lover visita nuestro apartado informático donde 
+                            encontraras las mejores recomendaciones y mas.
+                        </p>
+                    </div>
+
+                    <div class="row pricing">
+                        <!-- Free Tier -->
+                        <div class="col-lg-4">
+                          <div class="card mb-5 mb-lg-0">
+                            <div class="card-body text-center">
+                              <img src="assets/quienes_somos/dog_lovers_1.jpg" alt="Dog Lovers">
+
+                              <div class="dog-lover">
+                                <h6 class="card-price">Dog Lovers</h6>
+                                  <p>Conoce nuestro espacio <span class="text-color">Dog Lovers</span> donde podras encontrar informacion realacionada a nuestros amigos caninos.</p>
+                              </div>
+                            </div>
+                              <!-- Boton -->
+                              <a href="#" class="btn btn-block btn-dog text-uppercase">Visitar pagina</a>
+                          </div>
+                        </div>
+
+                        <!-- Free Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                              <div class="card-body text-center">
+                                <img src="assets/quienes_somos/dog_cats_1.jpg" alt="Cat Lovers">
+  
+                                <div class="dog-lover">
+                                  <h6 class="card-price">Cat Lovers</h6>
+                                  <p>Nuestro espacio <span class="text-color">Cat Lovers</span> un lugar para conocer, aprender y entender de mejor manera a nuestros amigos felinos.</p>
+                                </div>
+                              </div>
+                                <!-- Boton -->
+                                <a href="#" class="btn btn-block btn-cat text-uppercase">Visitar pagina</a>
+                            </div>
+                          </div>
+
+                        <!-- Free Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                              <div class="card-body text-center">
+                                <img src="assets/quienes_somos/covid_1.jpg" alt="Covid-19">
+  
+                                <div class="dog-lover">
+                                  <h6 class="card-price">Covid-19</h6>
+                                  <p>Por que la pandemia nos a afectado a todos conoce el espacio <span class="text-color">Covid-19</span> y enterate de las formas de cuidar a tus mascotas.</p>
+                                </div>
+                              </div>
+                                <!-- Boton -->
+                                <a href="#" class="btn btn-block btn-covid text-uppercase">Visitar pagina</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-productos" id="productos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center">
+                      <div class="row justify-content-center">
+
+                        <!-- Texto Tienda -->
+                        <div class="col-lg-8 text-center tienda">
+                          <h2><span>Tienda</span> Home Pet</h2>
+                          <p class="lead">Encuentra todo tipo de proudctos en nuestra tienda desde medicamentos, ropa, accesorios, alimentos y mas, revisa los productos
+                            destacados como tambien las ofertas que tenemos para ti, no te lo pierdas! </p>
+                        </div>
+
+
+                         <!-- Paginacion Perro / Gato -->
+                        <div class="col-lg-12">
+                          <div class="content-adopta">
+                            <div class="card card-adopta">
+                              <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                  
+                                  <!-- Item perro -->
+                                  <li class="nav-item">
+                                    <a class="nav-link active" role="tab" data-toggle="tab" href="#perro"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg> Destacados</a>
+                                  </li>
+
+                                  <!-- Item Gato -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" role="tab" data-toggle="tab" href="#gato"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                      <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                      <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg> Mas comprados</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <!-- Contenido de los Item -->
+                              <div class="tab-content">
+                                
+                                <!-- Content producto destacado -->
+                                <div role="tabpanel" class="tab-pane active" id="perro">
+                                  <div class="container">
+                                  <div class="row">
+
+                                    <!-- Card-1 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                  </div>
+                                  </div>
+                                </div>
+                                
+
+                                <!-- Content Gato -->
+                                <div role="tabpanel" class="tab-pane fade" id="gato">
+                                  <div class="container">
+                                    <div class="row">
+                    
+                                    <!-- Card-1 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <a href="#">
+                                      <div class="card" >
+                                        <img src="assets/productos/producto_1_v4.jpg" class="card-img-top" alt="Adopta_1">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Plato Perro</h5>
+                                          <p><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                            <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                          </svg> - 10.000</p>
+                                        </div>
+                                      </div>
+                                      </a>
+                                    </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <a href="#">
+                                      <div class="card" >
+                                        <img src="assets/productos/producto_1_v5.jpg" class="card-img-top" alt="Adopta_1">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Hueso Plastico</h5>
+                                          <p><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                            <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                          </svg> - 7.000</p>
+                                        </div>
+                                      </div>
+                                      </a>
+                                    </div>
+
+                                    <!-- Card-3 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <a href="#">
+                                      <div class="card" >
+                                        <img src="assets/productos/producto_1_v6.jpg" class="card-img-top" alt="Adopta_1">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Casa plastico</h5>
+                                          <p><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                            <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                          </svg> - 45.000</p>
+                                        </div>
+                                      </div>
+                                      </a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="productos.html"><button type="button" class="btn btn-lg btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+                        <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
+                      </svg> Ir a productos</button></a>
+                      <a href="https://api.whatsapp.com/send?phone=+56984806041"><button type="button" class="btn btn-lg btn-outline-secondary btn-wsp"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                      </svg> Comprar via WhatsApp</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto text-center">
+                      <img src="assets/donar/donar_cat_v1.png">
+                    </div>
+
+                    <div class="col-lg-6 mx-auto">
+                      <h2>Te necesitan Ayudalos!</h2>
+                      <p class="lead">Como fundacion poyamos al 100% el cuidado de todas las mascotas, realizamos desparasitación, vacunación y esterilización,
+                        además de todos los cuidados y cariños necesarios para su bienestar.</p>
+                      <p class="lead"><strong class="socios">Los socios </strong>son personas que se comprometen a donar una cantidad mensual de dinero, para ayudar a 
+                        los gastos generales de la fundación y los rescatados.</p>
+                      <div class="row">
+                        <!-- Uno -->
+                        <div class="col-md-3 text-center">
+                          <img src="assets/donar/vacunacion_v1.png">
+                          <br>
+                          Vacunacion
+                        </div>
+
+                        <!-- Dos -->
+                        <div class="col-md-3 text-center">
+                          <img src="assets/donar/desparasitación_v1.png">
+                          <br>
+                          Desparasitación
+                        </div>
+
+                        <!-- Tres -->
+                        <div class="col-md-3 text-center">
+                          <img src="assets/donar/esterilización_v1.png">
+                          <br>
+                          Esterilización
+                        </div>
+
+
+                        <!-- Cuatro -->
+                        <div class="col-md-3 text-center">
+                          <img src="assets/donar/cariño_amor_v1.png">
+                          <br>
+                          Cariño y Amor
+                        </div>
+                      </div>
+                      <br><br>
+                      <button type="button" class="btn btn-outline-danger btn-donar">Donar</button>
+                      <button type="button" class="btn btn-outline-danger btn-socio">Convertirse en socio</button>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light bg-adopcion" id="adopcion">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 mx-auto content-adopcion">
+                    <h2>Adopta una Mascosta</h2>
+                    <p class="lead">¿Buscas adoptar y dar hogar a un animal rescatado en Santiago? Estos peludos eran callejeros 
+                      y abandonados de Santiago y fueron rescatados por nosotros, recibiendo atención para mejorar 
+                      su salud física y emocional.</p>
+                    <p class="lead text-categoria">Selecciona una de nuestras categorias <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg></p>  
+                  </div>
+                    <div class="col-lg-6 mx-auto">
+                      <div class="row text-center">
+                        <div class="col-lg-6">
+                          <a href="#" class="hov_cat">
+                          <img id="desaparece" src="assets/adopcion/Dog_cat.png" onmouseover="this.src='assets/adopcion/Cat_adoptar_hover.png'" onmouseout="this.src='assets/adopcion/Dog_cat.png'" alt="Categoria_Gato">
+                          </a>
+                        </div>
+                        <div class="col-lg-6">
+                          <a href="#">
+                          <img src="assets/adopcion/Dog_adoptar.png" onmouseover="this.src='assets/adopcion/Dog_adoptar_hover.png'" onmouseout="this.src='assets/adopcion/Dog_adoptar.png'" alt="Categoria_Perro">
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 mx-auto">
+                      <h2>Contactanos</h2>
+                      <p class="lead">Hola amig@s si tienen alguna duda respecto al proceso de adopcion o cualquier otro tema con relacion a nuestras mascotas porfavor no dudes
+                        en contactarnos mediante el siguiente formulario y nuestro equipo se pondra en contacto.
+                      </p>
+                  </div>
+
+                  <div class="col-lg-1"></div>
+
+                  <div class="col-lg-6 mx-auto contact">
+
+                    <!-- FORMULARIO -->
+                    <form class="needs-validation" id="formulario-contacto" novalidate="">
+                      <div class="row">
+                        <div class="col-lg-6">
+
+                          <!-- Name input -->
+                          <div class="form-group">
+                            <label class="form-label" for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" required="">
+                            
+                          <div class="valid-feedback">
+                            Campo rellenado!
+                          </div>
+                          <div class="invalid-feedback">
+                            Tienes que rellenar el campo!
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <!-- Email input -->
+                          <div class="form-group">
+                            <label class="form-label" for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control" required="">
+                            <div class="valid-feedback">
+                              Campo rellenado!
+                            </div>
+                            <div class="invalid-feedback">
+                              Tienes que rellenar el campo!
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <!-- Email input -->
+                          <div class="form-group">
+                            <label class="form-label" for="email">Email address</label>
+                            <input type="email" name="email" id="email" class="form-control" required="" />
+
+                            <div class="valid-feedback">
+                              Campo rellenado!
+                            </div>
+                            <div class="invalid-feedback">
+                              Tienes que rellenar el campo!
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <label for="inputState">Pais</label>
+                          <select id="inputState" name="pais" class="form-control">
+                            <option selected>Chile</option>
+                            <option>Colombia</option>
+                            <option>Peru</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                          </select>
+                          <div class="valid-feedback">
+                            Campo rellenado!
+                          </div>
+                          <div class="invalid-feedback">
+                            Tienes que rellenar el campo!
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                          <label for="ciudad">Ciudad</label>
+                          <input type="text" name="ciudad" class="form-control" id="ciudad" required="" >
+
+                          <div class="valid-feedback">
+                            Campo rellenado!
+                          </div>
+                          <div class="invalid-feedback">
+                            Tienes que rellenar el campo!
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label class="form-label" for="informacion">Informacion adicional</label>
+                            <textarea class="form-control" name="mensaje" id="informacion" rows="4" required=""></textarea>
+
+                            <div class="valid-feedback">
+                              Campo rellenado!
+                            </div>
+                            <div class="invalid-feedback">
+                              Tienes que rellenar el campo!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" id="submitButton" class="btn btn-contact">Enviar</button>
+                    </form>
+
+                </div>
+              </div>
+          </div>
+      </section>
+
+    <!------------------------------------------------->
+      <!--------------------------------------------------->
+
+
+      
+    
+    <!---<section id="api_pokemon" > 
+      <div class="container"> 
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4">
+                <main class="flex"></main>
+                  <template id="card">
+                  <div class="card mb-3">
+                    <img  class="card-header">
+                    <div class="card-body mb-3">
+                        <img src=""  style="width: 70%; height: 80%;" alt="" class="card-body-img">
+                        <h1 class="card-body-title">
+                            Victor charst
+                            <span>26</span>
+                        </h1>
+                        <p class="card-body-text">London</p>
+                    </div>
+                    <div class="row card-footer">
+                        <div class="col-lg-4 card-footer-social">
+                            <h3>80K</h3>
+                            <p>Ataque</p>
+                        </div>
+                        <div class="col-lg-4 card-footer-social">
+                            <h3>803K</h3>
+                            <p>Ataque Especial</p>
+                        </div>
+                        <div class="col-lg-4 card-footer-social">
+                            <h3>1.4K</h3>
+                            <p>Defensa</p>
+                        </div>
+                    </div>
+
+                </adiv>
+                  </template>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+       
+        
+    </template>---->
+
+   
+    
+
+    <!--------------------- prueba card  --------------------------->
+    <h1 class="title">Pokedex</h1>
+    <div class="pokemon-container">
+
+    </div>
+    <nav class="pagination" aria-label="...">
+        <ul class="pagination">
+          <li class="page-item" id="previous">
+            <button class="card button" href="#" tabindex="-1">Anterior</button>
+          </li>
+          <li class="page-item" id="next">
+            <button class="card button" href="#">Siguiente</a>
+          </li>
+        </ul>
+      </nav>
+    <div id="spinner" class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+   
+    <script src="js/main.js"></script>
+
+            <!-- FOOTER -->
+    <footer class="page-footer font-small blue pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left footer-ct">
+
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">ACCESOS</h5>
+            <br>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Quienes somos</a>
+              </li>
+              <li>
+                <a href="#!">Terminos y Condiciones</a>
+              </li>
+              <li>
+                <a href="#!">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">TIENDA</h5>
+            <br>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Carrito (proximamente)</a>
+              </li>
+              <li>
+                <a href="#!">Despachos</a>
+              </li>
+              <li>
+                <a href="#!">Ayuda y Soporte</a>
+              </li>
+              <li>
+                <a href="#!">Sucursales (proxiamamente)</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase">¿TE AYUDÁMOS?</h5>
+            <br>
+
+            <p class="wsp"><span style="color: #fd4c42;">WhatsApp: </span> +56 9 12541263</p>
+
+          </div>
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+    </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

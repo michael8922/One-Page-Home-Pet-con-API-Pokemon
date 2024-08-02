@@ -1,0 +1,544 @@
+
+    /************************************ PAGINA INICIO ************************************/
+
+
+@font-face {
+    font-family: monserrat-extrabold;
+    src: url(../fond/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: monserrat-medium;
+    src: url(../fond/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: monserrat-light;
+    src: url(../fond/Montserrat-Light.ttf);
+}
+
+
+h2 {
+    font-size: 48px;
+    font-family: monserrat-light;
+    color: #1c1c1c;
+}
+
+/* EStilos nav */
+
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #fd4c42!important;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+  .clockdate {
+    background-color: #fd4c42;
+    padding: 10px 15px 10px 15px;
+    border-radius: 60px;
+    color: #fff;
+  }
+
+
+
+
+/* Estilos Carrusel */
+
+header {
+    padding: 0!important;
+}
+
+.carousel-caption .text-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  background-color: #343a40;
+  padding: 40px;
+}
+
+.carousel-caption h2 {
+  font-family: monserrat-medium;
+  color: #fd4c42;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  /* Estilos Seccion " Quienes Somos " */
+
+  .lead {
+      font-size: 1.10rem;
+  }
+
+  .pricing {
+      padding-top: 50px;
+  }
+
+  .pricing .card {
+    border: none;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .pricing .card-price {
+    color: #1c1c1c;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 20px 0;
+    font-family: monserrat-medium;
+  }
+
+  .text-color {
+      color: #fd4c42;
+      font-weight: 700;
+  }
+
+  .dog-lover p {
+    color: #9e9e9e;
+  }
+  
+  .pricing .btn {
+    font-family: monserrat-light;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 80%;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+  
+  /* Hover Effects on Card */
+  
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+
+    .btn-cat {
+        background-color: #c5aba5;
+    }
+
+    .btn-dog {
+        background-color: #343a40;
+    }
+
+    .btn-covid {
+        background-color: #70949d;
+    }
+  }
+
+
+  /* Estilos Seccion " Productos " */
+
+  .tienda h2 span {
+    font-weight: 900;
+    color: #fd4c42;
+  }
+
+  .btn-outline-secondary {
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: #fff;
+    font-family: monserrat-light;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .btn-wsp {
+    background-color: #fd4c42;
+    border: 1px solid #fd4c42;
+  }
+
+  .btn-wsp:hover {
+    background-color: #46c055;
+    border: 1px solid #46c055;
+    color: #fff;
+  }
+  
+  /*** Estilos paginacion productos ***/
+
+.content-adopta {
+    width: 100%;
+}
+
+.card-pet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card-pet .card .table {
+    margin-top: 50px;
+}
+
+.card-adopta {
+    border: 0;
+    background-color: transparent;
+}
+
+.card-pet a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.card-pet .card {
+  border-radius: 0;
+  border: 0;
+}
+
+.card-pet .card-body h5 {
+  font-family: monserrat-medium;
+}
+
+.card-pet .card-body p {
+  color: #fd4c42;
+  font-family: monserrat-extrabold;
+}
+
+.card-adopta .card-header {
+    background-color: transparent;
+    border-bottom: solid 1px #fff;
+}
+
+.card-adopta .nav-item a {
+    color: #5d5d5d;
+}
+
+.card-adopta .nav-item .nav-link.active {
+    color: #fd4c42;
+    background-color: transparent;
+    border: 0;
+}
+
+.card-adopta .nav-tabs .nav-link:hover {
+  border: solid 1px transparent;
+  color: #fd4c42;
+}
+
+
+
+.card-pet .card {
+  border-radius: 0;
+  border: 0;
+}
+
+
+.bg-productos {
+  background-image: url(../assets/productos/fondo_productos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estilos nuevas Cartas */
+.card_product {
+  position: relative;
+  background: #343a40;
+  height: 380px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.card_product::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fd4c42;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card_product:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card_product::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.1);
+
+}
+
+.card_product .imgBx {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.card_product .imgBx img {
+  max-width: 100%;
+  transform: 0.5s;
+}
+
+.card_product:hover .imgBx img {
+  max-width: 85%;
+}
+
+.card_product .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.card_product .contentBox h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card_product .contentBox .price {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card_product .contentBox .buy {
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  background: #fd4c42;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card_product:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+/* Fin estilos nuevas cartas */
+
+  /*** Estilos Seccion Donar ***/
+
+  .socios {
+    color: #fd4c42;
+  }
+
+  .btn-socio {
+    background-color: #fd4c42;
+    border: 1px solid #fd4c42;
+    color: #fff;
+    font-family: monserrat-light;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .btn-donar {
+    font-family: monserrat-light;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .btn-donar:hover {
+    background-color: #fd4c42;
+  }
+
+  .btn-socio:hover {
+    background-color: #fd4c42;
+    border: 1px solid #fd4c42;
+    color: #fff;
+  }
+
+
+  /*** Estilos Seccion Adopocion ***/
+
+  .bg-adopcion {
+    background-image: url(../assets/adopcion/fondo_adoptar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-adopcion .content-adopcion {
+    color: #fff;
+  }
+  
+  .bg-adopcion .content-adopcion h2 {
+    color: #fff;
+  }
+  
+  .content-adopcion .hov_cat:hover {
+    background-image: url(../assets/adopcion/Dog_adoptar_hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-categoria {
+    color: #fff;
+    font-family: monserrat-extrabold;
+  }
+
+    /*** Estilos Seccion Contacto ***/
+
+    .contact .col-lg-12, .col-lg-6 {
+      padding-top: 18px;
+    }
+
+    .btn-contact {
+      background-color: #fd4c42;
+      color: #fff;
+      margin-top: 18px;
+    }
+
+    .btn-contact:hover {
+      color: #fff;
+    }
+
+    .form-control:focus {
+      border-color:#fd4c42;
+      box-shadow: 0 0 0 0.2rem rgb(253 76 66 / 25%);
+    }
+
+
+
+    /************************************ FIN PAGINA INICIO ************************************/
+
+
+
+
+
+    /************************************ PAGINA INTERIOR PRODUCTOS ************************************/
+
+    .content-box-promo {
+      background: #fd4c42;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .content-box-promo h5 {
+      font-family: monserrat-light;
+    }
+
+    .content-box-promo h5 span {
+      font-weight: 900;
+      font-family: monserrat-extrabold;
+    }
+
+    .resultado {
+      background-color: #343a40!important;
+    }
+
+    .uf, .dolar, .euro {
+      background: #fd4c42;
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 35px;
+    }
+
+    #valorUF, #valorDolar, #valorEuro {
+      font-weight: 700;
+    }
+
+
+    /************************************ FIN PAGINA INTERIOR PRODUCTOS ************************************/
+
+
+
+
+    /*** FOOTER ***/
+
+    .page-footer {
+      background-color: #1a191e;
+      color: #fff;
+    }
+
+    .footer-ct {
+      padding: 40px 0;
+    }
+
+    .text-uppercase, .wsp {
+      font-family: monserrat-medium;
+      font-size: 30px;
+    }
+
+    .list-unstyled li a, .wsp {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .list-unstyled li a:hover {
+      color: #fd4c42;
+    }
+
+    .footer-copyright {
+      background: linear-gradient(to right, #3f312a, #1a1a1a);
+    }

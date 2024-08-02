@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Productos - Cute Pet</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/my_css.css" rel="stylesheet"/>
+        <link href="css/hover.css" rel="stylesheet"/>
+    </head>
+
+    <body id="page-top" onload="startTime()">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/logo/Logo_v1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link disabled  js-scroll-trigger" aria-disabled="true" href="#quienes_somos">Quienes somos</a></li>
+                        <li class="nav-item"><a class="nav-link hvr-underline-from-left js-scroll-trigger" aria-disabled="true" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link disabled hvr-underline-from-left js-scroll-trigger" aria-disabled="true" href="#donar">Donar</a></li>
+                        <li class="nav-item"><a class="nav-link disabled hvr-underline-from-left js-scroll-trigger" aria-disabled="true" href="#adopcion">Adopcion</a></li>
+                        <li class="nav-item"><a class="nav-link disabled hvr-underline-from-left js-scroll-trigger" aria-disabled="true" href="#contacto">Contacto</a></li>
+                </div>
+                <div class="clockdate">
+                  <span id="time"></span>
+                  <span id="date"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seccion productos -->
+        <section id="productos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto text-center">
+                      <div class="row justify-content-center">
+
+                        <!-- Texto Tienda -->
+                        <div class="col-lg-8 text-center tienda">
+                          <h2><span>Productos</span> Home Pet</h2>
+                          <p class="lead">Encuentra todo tipo de proudctos en nuestra tienda desde medicamentos, ropa, accesorios, alimentos y mas, revisa los productos
+                            destacados como tambien las ofertas que tenemos para ti, no te lo pierdas! </p>
+                        </div>
+
+                        <!-- Conversor monetario -->
+                        <div class="col-lg-9 text-center">
+                          <hr>
+                          <h5><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                          </svg> Conversor Monetario</h5>
+
+                          <!-- Valores Monetarios Tiempo real -->
+                          <div class="col-lg-12 mx-auto mt-5">
+                            <div class="row">
+                              <div class="col-lg-4"><span class="uf">Valor UF: <span id="valorUF"></span></span></div>
+                              <div class="col-lg-4"><span class="dolar">Valor Dolar: <span id="valorDolar"></span></span></div>
+                              <div class="col-lg-4"><span class="euro">Valor Euro: <span id="valorEuro"></span></span></div>
+                            </div>
+                          </div>
+                          
+                          <div class="row mt-5">
+
+                            <!-- Convertir de -->
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Cantidad:</label>
+                                <input type="range" class="form-control-range" id="cantidad" min="0" max="1000000" value="0"  onchange="convertir()">
+                                <span id="valor">0</span>
+                              </div>
+                            </div>
+
+                            <!-- Convertir de -->
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect1">Convertir De:</label>
+                                <select class="form-control" id="de" onchange="convertir()"> 
+                                  <option value="1" id="valorUF">Peso</option>
+                                  <option value="2" id="valorDolar">Dolar</option>
+                                  <option value="3" id="valorEuro">Euro</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <!-- Convertir de -->
+                            <div class="col-lg-4">
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect1">Convertir A:</label>
+                                <select class="form-control" id="a" onchange="convertir()">
+                                  <option value="1" id="valorUF">Peso</option>
+                                  <option value="2" id="valorDolar">Dolar</option>
+                                  <option value="3" id="valorEuro">Euro</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="uf resultado mt-4" id="resultado">Resultado: $0.00</div>
+
+                          <hr>
+                        </div>
+
+
+                         <!-- Paginacion Perro / Gato -->
+                        <div class="col-lg-12">
+                          <div class="content-adopta">
+                            <div class="card card-adopta">
+                              <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                  
+                                  <!-- Item juguetes -->
+                                  <li class="nav-item">
+                                    <a class="nav-link active" role="tab" data-toggle="tab" href="#perro"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg><br> Juguetes</a>
+                                  </li>
+
+                                  <!-- Item Alimentos -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" role="tab" data-toggle="tab" href="#gato"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                      <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                      <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                                    </svg><br> Alimentos</a>
+                                  </li>
+
+                                  <!-- Item Accesorios -->
+                                  <li class="nav-item">
+                                    <a class="nav-link" role="tab" data-toggle="tab" href="#accesorios"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                                      <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"/>
+                                    </svg><br> Accesorios</a>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <!-- Contenido de los Item -->
+                              <div class="tab-content">
+                                
+                                <!-- Content producto destacado -->
+                                <div role="tabpanel" class="tab-pane active" id="perro">
+                                  <div class="container">
+                                  <div class="row">
+
+                                    <!-- Card-1 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                  </div>
+                                  </div>
+                                </div>
+                                
+
+                                <!-- Content Gato -->
+                                <div role="tabpanel" class="tab-pane fade" id="gato">
+                                  <div class="container">
+                                    <div class="row">
+                    
+                                    <!-- Card-1 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <div class="card_product">
+                                        <div class="imgBx">
+                                            <img src="assets/productos/Productos_1.png" alt="">
+                                        </div>
+                                        <div class="contentBox">
+                                            <h3>Nombre producto</h3>
+                                            <h2 class="price">$25.<small>990</small></h2>
+                                            <a href="#" class="buy">Agregar al carro</a>
+                                        </div>
+                                      </div>
+                                      </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <div class="card_product">
+                                        <div class="imgBx">
+                                            <img src="assets/productos/Productos_1.png" alt="">
+                                        </div>
+                                        <div class="contentBox">
+                                            <h3>Nombre producto</h3>
+                                            <h2 class="price">$25.<small>990</small></h2>
+                                            <a href="#" class="buy">Agregar al carro</a>
+                                        </div>
+                                      </div>
+                                      </div>
+
+                                    <!-- Card-3 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Content Accesorios -->
+                                <div role="tabpanel" class="tab-pane fade" id="accesorios">
+                                  <div class="container">
+                                    <div class="row">
+                    
+                                    <!-- Card-1 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <div class="card_product">
+                                        <div class="imgBx">
+                                            <img src="assets/productos/Productos_1.png" alt="">
+                                        </div>
+                                        <div class="contentBox">
+                                            <h3>Nombre producto</h3>
+                                            <h2 class="price">$25.<small>990</small></h2>
+                                            <a href="#" class="buy">Agregar al carro</a>
+                                        </div>
+                                      </div>
+                                      </div>
+
+                                    <!-- Card-2 -->
+                                    <div class="col-lg-4 card-pet">
+                                      <div class="card_product">
+                                        <div class="imgBx">
+                                            <img src="assets/productos/Productos_1.png" alt="">
+                                        </div>
+                                        <div class="contentBox">
+                                            <h3>Nombre producto</h3>
+                                            <h2 class="price">$25.<small>990</small></h2>
+                                            <a href="#" class="buy">Agregar al carro</a>
+                                        </div>
+                                      </div>
+                                      </div>
+
+                                    <!-- Card-3 -->
+                                    <div class="col-lg-4 card-pet">
+                                    <div class="card_product">
+                                      <div class="imgBx">
+                                          <img src="assets/productos/Productos_1.png" alt="">
+                                      </div>
+                                      <div class="contentBox">
+                                          <h3>Nombre producto</h3>
+                                          <h2 class="price">$25.<small>990</small></h2>
+                                          <a href="#" class="buy">Agregar al carro</a>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                    </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small blue pt-4">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left footer-ct">
+
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">ACCESOS</h5>
+            <br>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Quienes somos</a>
+              </li>
+              <li>
+                <a href="#!">Terminos y Condiciones</a>
+              </li>
+              <li>
+                <a href="#!">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">TIENDA</h5>
+            <br>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Carrito (proximamente)</a>
+              </li>
+              <li>
+                <a href="#!">Despachos</a>
+              </li>
+              <li>
+                <a href="#!">Ayuda y Soporte</a>
+              </li>
+              <li>
+                <a href="#!">Sucursales (proxiamamente)</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase">¿TE AYUDÁMOS?</h5>
+            <br>
+
+            <p class="wsp"><span style="color: #fd4c42;">WhatsApp: </span> +56 9 12541263</p>
+
+          </div>
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+    </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
